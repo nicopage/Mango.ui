@@ -1,0 +1,128 @@
+<html>
+
+<style>
+    body {
+        background-color: #ffc405;
+     
+    }
+    
+    h1 {
+      text-align: center;
+      font-size:23vw;
+      font-family: "Arial Black", Times, serif;
+    }
+    h2{
+        text-align: center;
+      font-size:7vw;
+      font-family: "Arial Black", Times, serif;
+    
+    }
+
+    h3{
+        text-align: center;
+      font-size:5vw;
+      font-family: "Courier New", Courier, monospace;
+    
+    }
+
+    p{
+        text-align: center;
+      font-size:4vw;
+      font-family: "Arial Black", Times, serif;
+    
+    }
+
+   
+    
+    </style>
+
+
+
+<center>
+    <h3>You can't wait till we throw Liam's 100th birthday party? That's what we thought. We built this website just for you. This will help you wait till the party comes.</h3>
+    <h2 >Days till Liam hits 100 :</h2>
+    <h1 id = "demo"></h1>
+
+
+
+<!-- Display the countdown timer in an element -->
+<p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Mar 16, 2099 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+
+
+</script>
+
+<form action="" method="post">
+  <label for=""> Name: <br><input type="text"name="name"><br></label>
+  <label for="">Message: <br><textarea cols="45" rows="5" name="mes"></textarea> </label> <br>
+  <input type="submit" name="post" value="Post">
+
+
+</form>
+
+<?php
+
+$name = $_POST["name"];
+$text = $_POST["mes"];
+$post = $_POST["post"];
+
+if($post){
+  $write = fopen("com.text","a+");
+  fwrite($write, "<u><b> $name</b></u> <br> $text<br></br>");
+  fclose($write);
+
+  $read = fopen("com.text","r+t");
+  echo "All comments: ";
+
+  while(!feof($read)){
+    echo fread($read, 1024);
+  }
+  fclose($read);
+}
+else{
+
+    $read = fopen("com.text","r+t");
+  echo "All comments: ";
+
+  while(!feof($read)){
+    echo fread($read, 1024);
+  }
+
+  fclose($read);
+}
+
+?>
+</html>
+
+
+
+</center>

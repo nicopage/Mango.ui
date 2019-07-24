@@ -479,6 +479,14 @@ h6 {
   background: #ecf5ff;
 }
 
+.banner{
+  
+  padding-top: 5%; 
+  padding-bottom: 5%; 
+  padding-right: 0%;
+  padding-left: 0%;
+}
+
 /* About Us Section
 --------------------------------*/
 

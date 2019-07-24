@@ -237,6 +237,11 @@ h6 {
   color: #fff;
 }
 
+/* Distance du premier titre et du text/image */
+header.section-header{
+  padding-bottom: 20px;
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -496,7 +501,7 @@ h6 {
 }
 
 #about .about-container .background {
-  margin: 20px 0;
+  margin: 0px 0;
 }
 
 #about .about-container .content {

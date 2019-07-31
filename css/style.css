@@ -485,9 +485,9 @@ header.section-header{
 }
 
 .banner{
-  
-  padding-top: 5%; 
-  padding-bottom: 5%; 
+
+  padding-top: 5%;
+  padding-bottom: 5%;
   padding-right: 0%;
   padding-left: 0%;
 }
@@ -1424,4 +1424,13 @@ header.section-header{
   #intro {
     padding: 100px 0 20px 0;
   }
+}
+
+.getstarted{
+  background-color: orange;
+}
+
+.officeImage{
+    max-width: 75%;
+    position: center;
 }

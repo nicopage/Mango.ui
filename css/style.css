@@ -1438,8 +1438,3 @@ header.section-header{
     position: center;
 }
 
-img.img-fluid.center-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}

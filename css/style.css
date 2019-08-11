@@ -1430,10 +1430,16 @@ header.section-header{
 }
 
 .getstarted{
-  background-color: orange;
+  padding-top: 3px solid orange;
 }
 
 .officeImage{
     max-width: 75%;
     position: center;
+}
+
+img.img-fluid.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

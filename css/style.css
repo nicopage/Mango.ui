@@ -952,6 +952,9 @@ header.section-header{
   position: relative;
   border-radius: 50%;
   overflow: hidden;
+  max-width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #team .member .member-info {

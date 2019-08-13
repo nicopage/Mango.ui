@@ -1438,6 +1438,10 @@ header.section-header{
 
 .officeImage{
     max-width: 75%;
-    position: center;
+    margin: auto;
+}
+
+.list-contact{
+  margin: auto;
 }
 

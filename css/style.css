@@ -50,7 +50,7 @@ h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #007bff;
+  background: #ff7300;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -161,8 +161,8 @@ h6 {
 
 #header .logo img {
   padding: 0;
-  margin: 7px 0;
-  max-height: 26px;
+  margin: 0px 0;
+  max-height: 45px;
 }
 
 .main-pages {
@@ -1205,14 +1205,14 @@ header.section-header{
 --------------------------------------------------------------*/
 
 #footer {
-  background: #00428a;
+  background: #0a0a0a;
   padding: 0 0 30px 0;
   color: #eee;
   font-size: 14px;
 }
 
 #footer .footer-top {
-  background: #004a99;
+  background: #0a0a0a;
   padding: 60px 0 30px 0;
 }
 

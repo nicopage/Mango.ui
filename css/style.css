@@ -200,7 +200,7 @@ h6 {
 }
 
 #intro .intro-info h2 span {
-  color: #74b5fc;
+  color: #0a0a0a;
   text-decoration: underline;
 }
 
@@ -219,8 +219,8 @@ h6 {
 }
 
 #intro .intro-info .btn-get-started {
-  background: #007bff;
-  border: 2px solid #007bff;
+  background: #0a0a0a;
+  border: 2px solid #0a0a0a;
   color: #fff;
 }
 
